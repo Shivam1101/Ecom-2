@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP | Shop4u</title>
+    <meta name="description" content="Lorem ipsum">
+    <meta name="keywords" content="lorem,ipsunm,qwert">
+    <meta name="author" content="Groots">
+    <meta name="copyright" content="Groots">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/header-menu.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- Ui Icons CSS -->
+    <link rel='stylesheet' href='assets/ui-icons/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-brands/css/uicons-brands.css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+<body>
+    <div data-include="templates/header.html"></div>
+    <section class="bg-grey">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Enter OTP</li>
+                </ol>
+            </nav>
+        </div>
+        <section id="forgot-pass">
+            <div class="container pb-5">
+                <div class="forgot-pass-wrapper">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-12 text-center ">
+                            <div class="login_wrap w-50">
+                                <div class="heading_s1">
+                                    <img class="img-fluid mb-2" src="assets/images/otp.png" alt="forgot-pass" width="120">
+                                    <h2 class="mb-15 mt-15">Enter the OTP</h2>
+                                    <p class="mb-1">A one time password was send to your email id <br>Enter this OTP to change the password</p>
+                                </div>
+                                <form method="post" action="reset-password.html">
+                                    <div class="form-group">
+                                        <input type="text" required="" name="email" placeholder="Enter OTP" class="form-control"/>
+                                    </div>
+                                   
+                                    <!-- <div class="login_footer form-group text-left ">
+                                        <div class="chek-form">
+                                            <div class="custome-checkbox">
+                                                <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="" />
+                                                <label class="form-check-label" for="exampleCheckbox1"><span>I agree to terms & Policy.</span></label>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <button type="submit" class="btn view-more-btn hover-up" name="login">Submit OTP</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div data-include="templates/footer.html"></div>
+    <script type="text/javascript" src="assets/js/HTMLInclude.js"></script>
+</body>
+<script>
+document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+
+</html>

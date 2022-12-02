@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
+    <title>Contact us | Shop4u</title>
+    <meta name="description" content="Lorem ipsum">
+    <meta name="keywords" content="lorem,ipsunm,qwert">
+    <meta name="author" content="Groots">
+    <meta name="copyright" content="Groots">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/header-menu.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- Ui Icons CSS -->
+    <link rel='stylesheet' href='assets/ui-icons/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-brands/css/uicons-brands.css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Map css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+</head>
+
+<body>
+    <div data-include="templates/header.html"></div>
+    <section class="bg-grey">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+                </ol>
+            </nav>
+        </div>
+        <section id="contact-info-wrapper" class="pb-3">
+            <div class="container">
+                <div class="contact-info-row">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="contact-left-info-wrapper">
+                                <h1>Get In Touch</h1>
+                                <p class="contact-sub-line">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h2> <i class="fi fi-rr-phone-call"></i> +91 9897654312</h2>
+                                <div class="shop-timings">
+                                    <p>Monday – Friday: 9:00-20:00 </p>
+                                    <p>Saturday: 11:00 – 15:00</p>
+                                </div>
+                                <div class="mail-wrap">
+                                    <span>contact@shop4u.in</span>
+                                </div>
+                                <div class="address-wrap">
+                                    <p>16734 Est accusamus vero, ratione reprehenderit autem consequuntur eos velit,Texas,77379,United States </p>
+                                </div>
+                                <div class="contact-social-icon ">
+                                    <a href="#" class="hover-up "><i class="fi fi-brands-facebook"></i></a>
+                                    <a href="#" class="hover-up"><i class="fi fi-brands-twitter"></i></a>
+                                    <a href="#" class="hover-up"><i class="fi fi-brands-instagram"></i></a>
+                                    <a href="#" class="hover-up"><i class="fi fi-brands-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div id="map"></div>
+                            <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+                            <script>
+                            //     var map = L.map('map').setView([18.565951382872512, 73.78410759908408], 13);
+                            // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            //     maxZoom: 19,
+                            //     attribution: '© OpenStreetMap'
+                            // }).addTo(map);
+
+                            // var marker = L.marker([18.565951382872512, 73.78410759908408]).addTo(map);
+                            // marker.bindPopup("<b>Groots Software Technologies Pvt. Ltd.</b><br>").openPopup();
+                            // circle.bindPopup("I am a circle.");
+                            // polygon.bindPopup("I am a polygon.");
+
+                            var cities = L.layerGroup();
+
+                            var mLittleton = L.marker([18.56,73.7819112]).bindPopup('Groots').addTo(cities);
+                            var mDenver = L.marker([18.5655507,73.784257]).bindPopup('Jupiter').addTo(cities);
+                            var mAurora = L.marker([18.5645385, 73.7844883]).bindPopup('Dotfit').addTo(cities);
+                           
+
+                            var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+                            var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+                            var streets = L.tileLayer(mbUrl, { id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr });
+
+                            var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                maxZoom: 19,
+                                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                            });
+
+                            var map = L.map('map', {
+                                center: [18.56, 73.78],
+                                zoom:15,
+                                layers: [osm, cities]
+                            });
+
+                            var baseLayers = {
+                                'OpenStreetMap': osm,
+                                'Streets': streets
+                            };
+
+                            var overlays = {
+                                'Cities': cities
+                            };
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="multiple-address" class="pb-3 pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="location-box-wrapper box-shadow-global">
+                            <h3>Location 1 </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus debitis perferendis.</p>
+                            <ul>
+                                <li><i class="fi fi-rr-smartphone"></i> (123) 456-7890</li>
+                                <li><i class="fi fi-rr-envelope"></i> contact@shop4u.com </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="location-box-wrapper box-shadow-global">
+                            <h3>Location 2 </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus debitis perferendis.</p>
+                            <ul>
+                                <li><i class="fi fi-rr-smartphone"></i> (123) 456-7890</li>
+                                <li><i class="fi fi-rr-envelope"></i> contact@shop4u.com </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="location-box-wrapper box-shadow-global">
+                            <h3>Location 3 </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus debitis perferendis.</p>
+                            <ul>
+                                <li><i class="fi fi-rr-smartphone"></i> (123) 456-7890</li>
+                                <li><i class="fi fi-rr-envelope"></i> contact@shop4u.com </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="contact-us-form-wrapper" class="pb-3 pt-3">
+            <div class="container">
+                <div class="form-wrapper-inner box-shadow-global ">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-8 col-sm-12 col-md-12">
+                            <h1>Fill up the form if you have any question</h1>
+                            <form class="" id="contact-form" action="#" method="post">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                            <input name="name" placeholder="Name and Surname" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="form-group mb-20">
+                                            <input name="email" placeholder="Your Email" type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="form-group mb-20">
+                                            <input name="phone" placeholder="Your Phone" type="tel" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="textarea-style mb-30">
+                                            <textarea name="message" placeholder="Message" rows="5" class="form-control"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn view-more-btn mt-4">Send message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <img src="assets/images/contact-us.png" alt="contact-us" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div data-include="templates/footer.html"></div>
+    <script type="text/javascript" src="assets/js/HTMLInclude.js"></script>
+</body>
+<script>
+document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+
+</html>

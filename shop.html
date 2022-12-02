@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Shop4u</title>
+    <meta name="description" content="Lorem ipsum">
+    <meta name="keywords" content="lorem,ipsunm,qwert">
+    <meta name="author" content="Groots">
+    <meta name="copyright" content="Groots">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/header-menu.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- Ui Icons CSS -->
+    <link rel='stylesheet' href='assets/ui-icons/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='assets/ui-icons/uicons-brands/css/uicons-brands.css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+<body class="shop-page">
+    <div data-include="templates/header.html"></div>
+    <section class="bg-grey">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+        </div>
+        <section id="shop-wrapper" class="pb-3">
+            <div class="container">
+                <div class="shop-wrapper-outer">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <a class="shop-filter-toogle d-lg-none d-xl-none" href="#">
+                                <span class="fi-rs-filter mr-2"></span>
+                                Filters
+                                <i class="fi-rs-angle-small-down angle-down"></i>
+                                <i class="fi-rs-angle-small-up angle-up"></i>
+                            </a>
+                            <div class="shop-left-sidebar shop-product-fillter-header">
+                                <div class="sidebar-widget widget-category-2 mb-30">
+                                    <h5 class="section-title style-1 mb-30">Product Categories</h5>
+                                    <ul class="shop-sidebar-category">
+                                        <li>
+                                            <a href="#!"><i class="fi fi-rr-grape"></i>Fruits & Vegetables</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!"> <i class="fi fi-rr-steak"></i>Meats & Seafood</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!"> <i class="fi fi-rr-egg-fried"></i>Breakfast & Dairy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!"> <i class="fi fi-rr-mug-hot-alt"></i>Beverages</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!"><i class="fi fi-rr-pie"></i>Breads & Bakery</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!"> <i class="fi fi-rr-snowflake"></i>Frozen Foods</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!"><i class="fi fi-rr-popcorn"></i>Biscuits & Snacks</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!"> <i class="fi fi-rr-flower-tulip"></i>Grocery & Staples</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Fillter By Price -->
+                                <div class="sidebar-widget price_range range mb-30 pt-3">
+                                    <h5 class="section-title style-1 mb-30">Fill by price</h5>
+                                    <div class="price-filter">
+                                        <div class="price-filter-inner">
+                                            <div class="shop-price-filter">
+                                                <div class="custome-radio">
+                                                    <input class="form-check-input" required="" type="radio" name="shipping_options" id="exampleRadios3" checked="">
+                                                    <label class="form-check-label" for="exampleRadios3" data-bs-toggle="collapse" data-target="#flatrate" aria-controls="flatrate">Less than 500</label>
+                                                </div>
+                                                <div class="custome-radio">
+                                                    <input class="form-check-input" required="" type="radio" name="shipping_options" id="exampleRadios4" checked="">
+                                                    <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse" data-target="#freeshipping" aria-controls="freeshipping">Between 500 to 1500</label>
+                                                </div>
+                                                <div class="custome-radio">
+                                                    <input class="form-check-input" required="" type="radio" name="shipping_options" id="exampleRadios5" checked="">
+                                                    <label class="form-check-label" for="exampleRadios5" data-bs-toggle="collapse" data-target="#localpickup" aria-controls="localpickup">Above 1500</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between flex-wrap pt-3">
+                                                <div class="caption">From: <strong id="slider-range-value1" class="text-brand"><input type="text" name="min-value"></strong></div>
+                                                <div class="caption">To: <strong id="slider-range-value2" class="text-brand"><input type="text" name="max-value" id=""></strong></div>
+                                            </div>
+                                            <div class="justify-content-end text-right"><button type="button" class="btn">FILTER</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget widget-category-2 pt-1 color-select">
+                                    <h5 class="section-title style-1 mb-30 mt-4">Fill by color</h5>
+                                    <div class="d-flex flex-wrap">
+                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Out of Stock">
+                                            <button type="button" class="btn  blue">
+                                                <i class="fi fi-ss-circle"></i>
+                                            </button>
+                                        </div>
+                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="03 Items Available">
+                                            <button type="button" class="btn  green">
+                                                <i class="fi fi-ss-circle"></i>
+                                            </button>
+                                        </div>
+                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="03 Items Available">
+                                            <button type="button" class="btn red">
+                                                <i class="fi fi-ss-circle"></i>
+                                            </button>
+                                        </div>
+                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="02 Items Available">
+                                            <button type="button" class="btn yellow">
+                                                <i class="fi fi-ss-circle"></i>
+                                            </button>
+                                        </div>
+                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="01 Items Available">
+                                            <button type="button" class="btn violet">
+                                                <i class="fi fi-ss-circle"></i>
+                                            </button>
+                                        </div>
+                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="04 Items Available">
+                                            <button type="button" class="btn black">
+                                                <i class="fi fi-ss-circle"></i>
+                                            </button>
+                                        </div>
+                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="03 Items Available">
+                                            <button type="button" class="btn  white">
+                                                <i class="fi fi-ss-circle"></i>
+                                            </button>
+                                        </div>
+                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="04 Items Available">
+                                            <button type="button" class="btn orange">
+                                                <i class="fi fi-ss-circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget widget-category-2 pt-4 shop-review">
+                                    <h5 class="section-title style-1 mb-30">Reviews</h5>
+                                    <div class="ratings pt-2 ">
+                                        <input class="form-check-input" required="" type="radio" name="review" id="exampleRadios4" checked="">
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                    </div>
+                                    <div class="ratings pt-2">
+                                        <input class="form-check-input" required="" type="radio" name="review" id="exampleRadios4" checked="">
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star"></i>
+                                    </div>
+                                    <div class="ratings pt-2">
+                                        <input class="form-check-input" required="" type="radio" name="review" id="exampleRadios4" checked="">
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star"></i>
+                                        <i class="fi fi-sr-star"></i>
+                                    </div>
+                                    <div class="ratings pt-2">
+                                        <input class="form-check-input" required="" type="radio" name="review" id="exampleRadios4" checked="">
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star "></i>
+                                        <i class="fi fi-sr-star"></i>
+                                        <i class="fi fi-sr-star"></i>
+                                    </div>
+                                    <div class="ratings pt-2">
+                                        <input class="form-check-input" required="" type="radio" name="review" id="exampleRadios4" checked="">
+                                        <i class="fi fi-sr-star rating-color"></i>
+                                        <i class="fi fi-sr-star "></i>
+                                        <i class="fi fi-sr-star "></i>
+                                        <i class="fi fi-sr-star"></i>
+                                        <i class="fi fi-sr-star"></i>
+                                    </div>
+                                </div>
+                                <!-- Product sidebar Widget -->
+                                <div class="sidebar-widget product-sidebar mb-30 p-30  border-radius-10 mt-5">
+                                    <h5 class="section-title style-1 mb-30">New products</h5>
+                                    <div class="justify-content-between d-flex mt-4 border-bottom new-products-single ">
+                                        <div class="justify-content-between d-flex">
+                                            <div class="thumb text-center">
+                                                <img src="assets/images/product/product-image-56-600x540.jpg" alt="" class="img-fluid" width="85">
+                                            </div>
+                                            <div class="desc">
+                                                <div class="justify-content-between mb-3">
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify-content-between d-flex mt-4 border-bottom new-products-single ">
+                                        <div class="justify-content-between d-flex">
+                                            <div class="thumb text-center">
+                                                <img src="assets/images/product/product-image-56-600x540.jpg" alt="" class="img-fluid" width="85">
+                                            </div>
+                                            <div class="desc">
+                                                <div class="justify-content-between mb-3">
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify-content-between d-flex mt-4 border-bottom new-products-single ">
+                                        <div class="justify-content-between d-flex">
+                                            <div class="thumb text-center">
+                                                <img src="assets/images/product/product-image-56-600x540.jpg" alt="" class="img-fluid" width="85">
+                                            </div>
+                                            <div class="desc">
+                                                <div class="justify-content-between mb-3">
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner-img wow fadeIn mb-lg-0 animated d-lg-block d-none">
+                                    <img src="assets/images/new-product-right-offer-2.jpg" alt="new-product-right-offer" class="img-fluid rounded">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <div class="shop-product-wrapper">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="shop-product-fillter">
+                                            <div class="totall-product">
+                                                <p>We found <strong class="text-brand">29</strong> items for you!</p>
+                                            </div>
+                                            <div class="sort-by-product-area">
+                                                <div class="sort-by-cover mr-10">
+                                                    <div class="sort-by-product-wrap">
+                                                        <div class="sort-by">
+                                                            <span><i class="fi-rs-apps"></i>Show:</span>
+                                                        </div>
+                                                        <div class="sort-by-dropdown-wrap">
+                                                            <span> 50 <i class="fi-rs-angle-small-down"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sort-by-dropdown">
+                                                        <ul>
+                                                            <li><a class="active" href="#">50</a></li>
+                                                            <li><a href="#">100</a></li>
+                                                            <li><a href="#">150</a></li>
+                                                            <li><a href="#">200</a></li>
+                                                            <li><a href="#">All</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="sort-by-cover">
+                                                    <div class="sort-by-product-wrap">
+                                                        <div class="sort-by">
+                                                            <span><i class="fi-rs-apps-sort"></i>Sort by:</span>
+                                                        </div>
+                                                        <div class="sort-by-dropdown-wrap">
+                                                            <span> Featured <i class="fi-rs-angle-small-down"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sort-by-dropdown">
+                                                        <ul>
+                                                            <li><a class="active" href="#">Featured</a></li>
+                                                            <li><a href="#">Price: Low to High</a></li>
+                                                            <li><a href="#">Price: High to Low</a></li>
+                                                            <li><a href="#">Release Date</a></li>
+                                                            <li><a href="#">Avg. Rating</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-products-wrapper">
+                                    <div class="row shop-product-grid">
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <!--  class addition -->
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/products/img-8.png" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- </div>
+                                    <div class="row shop-product-grid"> -->
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <!--  class addition -->
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- </div>
+                                    <div class="row shop-product-grid"> -->
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <!--  class addition -->
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- </div>
+                                    <div class="row shop-product-grid"> -->
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <!--  class addition -->
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- </div>
+                                    <div class="row shop-product-grid"> -->
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <!--  class addition -->
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1-5 col-md-4 col-6 col-sm-6 hover-up">
+                                            <div class="single-product-main-wrapper">
+                                                <div class="single-product-wrapper ">
+                                                    <img src="assets/images/product/product-image-56-600x540.jpg" alt="coconut" class="img-fluid">
+                                                    <h6 class="stock-status">INSTOCK</h6>
+                                                    <h5 class="product-title">Fresh Brown Coconut</h5>
+                                                    <div class="price text-left">
+                                                        <span class="regular-price"><del>₹ 400</del></span>
+                                                        <span class="sale-price">₹800</span>
+                                                    </div>
+                                                    <div class="ratings pt-2">
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star rating-color"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                        <i class="fi fi-sr-star"></i>
+                                                    </div>
+                                                    <div class="product-fade-block">
+                                                        <div class="cart text-center">
+                                                            <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-action-1">
+                                                        <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi fi-sr-expand-arrows"></i></a>
+                                                        <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-heart"></i></a>
+                                                        <a aria-label="Compare" class="action-btn small hover-up" href="#!" tabindex="0"><i class="fi fi-rr-shuffle"></i></a>
+                                                    </div>
+                                                    <div class="product-content-fade border-info" style="margin-bottom: -70px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-area mt-4">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-end">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#"><i class="fi-rs-arrow-small-left"></i></a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link dot" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#"><i class="fi-rs-arrow-small-right"></i></a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </section>
+    <div data-include="templates/footer.html"></div>
+    <script type="text/javascript" src="assets/js/HTMLInclude.js"></script>
+</body>
+<script>
+document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+
+</html>
